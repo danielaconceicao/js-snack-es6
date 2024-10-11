@@ -1,5 +1,6 @@
 /* 
 Stampare a schermo la bici con peso minore. */
+let spaceBici = document.querySelector('h1');
 
 //Creare un array di oggetti
 const bicycles = [
@@ -31,12 +32,26 @@ const bicycles = [
 
 ];
 
-let menorPeso = 0;
-for (let i = 0; i < bicycles.length; i++) {
-    const bici = bicycles[i];
-    //console.log(bici);
-     if (menorPeso > bici) {
 
-    } 
-    console.log(bici.peso);
+
+let lighterBike = bicycles[0];
+for (let i = 1; i < bicycles.length; i++) {
+    const bici = bicycles[i];
+    if (bici.peso < lighterBike.peso) {
+        lighterBike = bici;
+    }
 }
+console.log(lighterBike);
+
+
+
+//spaceBici.innerHTML = lighterBike
+
+/* 
+bici[0] < bici[1] = 7 < 4 false
+bici[1] < bici[2] = 4 < 8 true
+bici[1] < bici[3] = 4 < 10 true
+bici[1] < bici[4] = 4 < 5 true
+o mior numero é 4
+
+*/
