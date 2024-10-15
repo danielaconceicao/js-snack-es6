@@ -21,6 +21,6 @@ function newArr(arr, number1, number2){//un array e due numeri (a più piccolo d
 }
 
 const arr2 = [];
-console.log(newArr(arr2, 30, 20));
+console.log(newArr(arr2, 10, 20));
 
 

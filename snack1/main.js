@@ -1,7 +1,3 @@
-/* 
-Stampare a schermo la bici con peso minore. */
-let spaceBici = document.querySelector('h1');
-
 //Creare un array di oggetti
 const bicycles = [
     //Ogni oggetto descriverà una bici da corsa con le seguenti proprietà: nome e peso.
@@ -43,9 +39,9 @@ for (let i = 1; i < bicycles.length; i++) {
 }
 console.log(lighterBike);
 
+/* Stampare a schermo la bici con peso minore. */
+document.writeln(lighterBike.nome);
 
-
-//spaceBici.innerHTML = lighterBike
 
 /* 
 bici[0] < bici[1] = 7 < 4 false

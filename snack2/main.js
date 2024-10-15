@@ -35,28 +35,14 @@ const soccerTeam = [
   
 ];
 
-for (let i = 0; i < soccerTeam.length; i++) {
-    const team = soccerTeam[i];
-    console.log(team);
-}
-
 //creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console.
-const soccerTeam2 = [
-    {
-        nome: 'Corinthians', 
-        falliSubiti: Math.floor(Math.random() * 10) + 1,
-    },
-    {
-        nome: 'Palmeiras', 
-        falliSubiti: Math.floor(Math.random() * 10) + 1,
-    },
-    {
-        nome: 'Bahia', 
-        falliSubiti: Math.floor(Math.random() * 10) + 1,
-    },
-];
-
-for (let i = 0; i < soccerTeam2.length; i++) {
-    const team = soccerTeam2[i];
-    console.log(team);
+const newSoccerTeam = [];
+for (let i = 0; i< soccerTeam.length; i++) {
+    const team = soccerTeam[i];
+    newSoccerTeam.push({
+        nome: team.nome,
+        falliSubiti: team.falliSubiti
+    });
 }
+
+console.log(soccerTeam, newSoccerTeam);
